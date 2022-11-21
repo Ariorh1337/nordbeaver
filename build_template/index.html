@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="Expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+        <meta http-equiv="Cache-Control" content="no-cache" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta
+            name="viewport"
+            content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+        />
+        <title>NordBeaver Test</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        />
+        <style>
+            html {
+                /*background-image: url("./assets/bg_blurred.png");*/
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            html,
+            body {
+                height: 100%;
+                max-height: 100%;
+                width: 100%;
+                max-width: 100%;
+                
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-content: center;
+
+                overflow: hidden;
+            }
+
+            #mobile_keyboard {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                border: 0;
+                opacity: 0;
+            }
+
+            @font-face {
+                font-family: 'Zubilo Black';
+                src: url('assets/fonts/zubilo_black.woff') format('woff');
+            }
+        </style>
+
+        <script defer="defer" src="/app.js"></script>
+    <body>
+        <div style="font-family:'Zubilo Black'; position: absolute; left:-1000px; visibility:hidden;">.</div>
+        <input id="mobile_keyboard" type="text">
+        <canvas id="root"></canvas>
+    </body>
+</html>

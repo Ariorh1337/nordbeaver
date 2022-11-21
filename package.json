@@ -1,0 +1,29 @@
+{
+    "name": "nordbeaver",
+    "version": "1.0.0",
+    "description": "Test project for nordbeaver company",
+    "main": "src/index.ts",
+    "scripts": {
+        "local": "webpack-dev-server --config-name local",
+        "build": "webpack --config-name prod"
+    },
+    "author": "Ariorh1337",
+    "license": "ISC",
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^5.43.0",
+        "@typescript-eslint/parser": "^5.43.0",
+        "clean-webpack-plugin": "^4.0.0",
+        "copy-webpack-plugin": "^11.0.0",
+        "eslint": "^8.27.0",
+        "prettier": "^2.7.1",
+        "ts-loader": "^9.4.1",
+        "typescript": "^4.9.3",
+        "webpack": "^5.75.0",
+        "webpack-cli": "^4.10.0",
+        "webpack-dev-server": "^4.11.1"
+    },
+    "dependencies": {
+        "gsap": "^3.11.3",
+        "pixi.js": "^7.0.4"
+    }
+}
